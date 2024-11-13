@@ -1,18 +1,20 @@
-import { DNA } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
-function Loader() {
+const Loader = () => {
   return (
-    <div>
-      <DNA
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <ThreeDots
         visible={true}
         height="80"
         width="80"
-        ariaLabel="dna-loading"
+        color="#4fa94d"
+        radius="9"
+        ariaLabel="three-dots-loading"
         wrapperStyle={{}}
-        wrapperClass="dna-wrapper"
+        wrapperClass=""
       />
     </div>
   );
-}
+};
 
 export default Loader;
